@@ -52,7 +52,7 @@ Each ring is one provider. Several accounts with one provider are pooled into on
 | | You see | It means |
 | :---: | --- | --- |
 | <img src="screenshots/keys/ring-ok.png" width="72" alt=""> | A green arc and `36%` | The share you have used. |
-| <img src="screenshots/keys/ring-warn.png" width="72" alt=""> <img src="screenshots/keys/ring-hot.png" width="72" alt=""> <img src="screenshots/keys/ring-bad.png" width="72" alt=""> | Amber, orange, red | 50%, 80% and 95% used. |
+| <img src="screenshots/keys/ring-warn.png" width="54" alt=""> <img src="screenshots/keys/ring-hot.png" width="54" alt=""> <img src="screenshots/keys/ring-bad.png" width="54" alt=""> | Amber, orange, red | 50%, 80% and 95% used. |
 | <img src="screenshots/keys/ring-reset.png" width="72" alt=""> | `22h05m` under a full ring | The limit is used up and resets in 22 hours and 5 minutes. |
 | <img src="screenshots/keys/ring-balance.png" width="72" alt=""> | `$36` | A prepaid balance, for providers that sell credits. |
 | <img src="screenshots/keys/ring-signed-out.png" width="72" alt=""> | A purple dot | One account is signed out. Sign in again with omp. |
