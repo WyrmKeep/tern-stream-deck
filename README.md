@@ -21,7 +21,7 @@ The figures come from `omp usage` and the Tern command line. There are no API ke
   <img src="screenshots/page.png" width="560" alt="The ready-made page: five rings on the top row, five sessions in the middle, then agents, two new-tab keys, a free key and Back">
 </p>
 
-The camera turns the keys blue; this is what they look like.
+The photo is a page in use. This is the ready-made one that `./install.sh --page` sets up.
 
 ## Install
 
