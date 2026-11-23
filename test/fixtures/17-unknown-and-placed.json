@@ -1,0 +1,411 @@
+{
+  "name": "Unknown providers: ids, title case, collisions; placed ids absent from the data",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "Weird_Provider X",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:1",
+              "label": "Weird meter",
+              "scope": {
+                "provider": "Weird_Provider X",
+                "shared": true
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "weird.user@example.com"
+          }
+        },
+        {
+          "provider": "9lives-ai",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "n:1",
+              "label": "Lives",
+              "scope": {
+                "provider": "9lives-ai",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 25,
+                "limit": 100,
+                "remaining": 75,
+                "usedFraction": 0.25,
+                "remainingFraction": 0.75,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "über-ai",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "u:1",
+              "label": "Uber",
+              "scope": {
+                "provider": "über-ai",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 35,
+                "limit": 100,
+                "remaining": 65,
+                "usedFraction": 0.35,
+                "remainingFraction": 0.65,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "a-very-long-provider-name-with-more-than-thirty-two-characters",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "l:1",
+              "label": "Long",
+              "scope": {
+                "provider": "long",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 45,
+                "limit": 100,
+                "remaining": 55,
+                "usedFraction": 0.45,
+                "remainingFraction": 0.55,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "foo_bar",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "f:1",
+              "label": "Foo",
+              "scope": {
+                "provider": "foo_bar",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 55,
+                "limit": 100,
+                "remaining": 45,
+                "usedFraction": 0.55,
+                "remainingFraction": 0.45,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "foo-bar",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "f:1",
+              "label": "Foo",
+              "scope": {
+                "provider": "foo-bar",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 65,
+                "limit": 100,
+                "remaining": 35,
+                "usedFraction": 0.65,
+                "remainingFraction": 0.35,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "Claude",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "c:1",
+              "label": "Capital Claude",
+              "scope": {
+                "provider": "Claude",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 75,
+                "limit": 100,
+                "remaining": 25,
+                "usedFraction": 0.75,
+                "remainingFraction": 0.25,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "opencode-zen",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "z:1",
+              "label": "Zen",
+              "scope": {
+                "provider": "opencode-zen",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 15,
+                "limit": 100,
+                "remaining": 85,
+                "usedFraction": 0.15,
+                "remainingFraction": 0.85,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "zen.user@example.com"
+          }
+        },
+        {
+          "provider": "xai",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:1",
+              "label": "Grok",
+              "scope": {
+                "provider": "xai",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 5,
+                "limit": 100,
+                "remaining": 95,
+                "usedFraction": 0.05,
+                "remainingFraction": 0.95,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "x￿",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:1",
+              "label": "Private use",
+              "scope": {
+                "provider": "x",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 11,
+                "limit": 100,
+                "remaining": 89,
+                "usedFraction": 0.11,
+                "remainingFraction": 0.89,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "x😀",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:1",
+              "label": "Smile",
+              "scope": {
+                "provider": "x",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 22,
+                "limit": 100,
+                "remaining": 78,
+                "usedFraction": 0.22,
+                "remainingFraction": 0.78,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "google-vertex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "g:1",
+              "label": "Vertex",
+              "scope": {
+                "provider": "google-vertex",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 33,
+                "limit": 100,
+                "remaining": 67,
+                "usedFraction": 0.33,
+                "remainingFraction": 0.67,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": null,
+          "limits": []
+        },
+        {
+          "provider": 5,
+          "limits": []
+        },
+        {
+          "provider": "",
+          "limits": []
+        },
+        {
+          "limits": []
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "kimi-code",
+          "type": "oauth",
+          "accountId": "acct-demo-kimi-01"
+        },
+        {
+          "provider": "Kimi Code",
+          "type": "oauth"
+        }
+      ],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": [
+      "ghost-provider",
+      "claude",
+      "Ghost Provider!",
+      "ghost_provider",
+      "ghost-provider",
+      "p-9lives-ai",
+      "",
+      "ZZZ top"
+    ]
+  }
+}

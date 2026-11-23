@@ -1,0 +1,52 @@
+{
+	"Name": "Tern",
+	"Description": "Tern on a Stream Deck: AI usage rings, sessions, agents and new tabs",
+	"Author": "WyrmKeep",
+	"Version": "0.1.0",
+	"Icon": "icons/plugin",
+	"Category": "Tern",
+	"CategoryIcon": "icons/plugin",
+	"CodePath": "plugin.mjs",
+	"OS": [{ "Platform": "linux" }],
+	"Actions": [
+		{
+			"Name": "Usage Ring",
+			"UUID": "io.github.wyrmkeep.tern.ring",
+			"Icon": "icons/ring",
+			"Tooltip": "How much of one AI subscription is used, as the Tern plugin Usage Rings shows it. Press for the limits, again for their reset times.",
+			"Controllers": ["Keypad"],
+			"SupportedInMultiActions": false,
+			"PropertyInspectorPath": "pi/ring.html",
+			"States": [{ "Image": "actionDefaultImage", "ShowTitle": false }]
+		},
+		{
+			"Name": "Session",
+			"UUID": "io.github.wyrmkeep.tern.session",
+			"Icon": "icons/session",
+			"Tooltip": "A Tern session with a dot per agent chat. Press to show it; press again for its next tab.",
+			"Controllers": ["Keypad"],
+			"SupportedInMultiActions": false,
+			"PropertyInspectorPath": "pi/session.html",
+			"States": [{ "Image": "actionDefaultImage", "ShowTitle": false }]
+		},
+		{
+			"Name": "Agents",
+			"UUID": "io.github.wyrmkeep.tern.agents",
+			"Icon": "icons/agents",
+			"Tooltip": "How many agent chats are working and how many finished unseen. Press to jump to the one that has waited longest.",
+			"Controllers": ["Keypad"],
+			"SupportedInMultiActions": false,
+			"States": [{ "Image": "actionDefaultImage", "ShowTitle": false }]
+		},
+		{
+			"Name": "New Tab",
+			"UUID": "io.github.wyrmkeep.tern.newtab",
+			"Icon": "icons/newtab",
+			"Tooltip": "A new tab in the session Tern shows, in the folder of the pane in front, with a command typed into it if one is set.",
+			"Controllers": ["Keypad"],
+			"SupportedInMultiActions": true,
+			"PropertyInspectorPath": "pi/newtab.html",
+			"States": [{ "Image": "actionDefaultImage", "ShowTitle": false }]
+		}
+	]
+}

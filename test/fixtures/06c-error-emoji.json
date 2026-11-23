@@ -1,0 +1,12 @@
+{
+  "name": "error of 41 code points made of emoji",
+  "input": {
+    "data": null,
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": null,
+    "loading": null,
+    "error": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "placed": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "data has all lists, all empty",
+  "input": {
+    "data": {
+      "generatedAt": 1795459100000,
+      "reports": [],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": {
+      "entries": []
+    },
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

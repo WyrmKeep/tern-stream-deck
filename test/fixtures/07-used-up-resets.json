@@ -1,0 +1,270 @@
+{
+  "name": "Used-up limits with resets hours, days, seconds ahead, none, and in the past",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795466625000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "openai-codex:secondary",
+              "label": "7 days",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "durationMs": 604800000,
+                "resetsAt": 1795977500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "plus",
+            "email": "codex.user@example.com",
+            "credentialId": 2
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795733120000
+              },
+              "amount": {
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "planType": "OpenCode Go",
+            "credentialId": 8
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795464500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "OpenCode Go",
+            "credentialId": 9
+          }
+        },
+        {
+          "provider": "devin",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "devin:quota:weekly",
+              "label": "Weekly Quota",
+              "scope": {
+                "provider": "devin",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly Quota"
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "email": "jordan.demo@example.com",
+            "credentialId": 19
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "xai-oauth:credits:1w",
+              "label": "SuperGrok Weekly Credits",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795459130000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 0.996,
+                "remainingFraction": 0.004,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "devon.fixture@example.com",
+            "credentialId": 18
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795455500000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "alex.sample@example.com",
+            "subscriptionPlan": "Max 20x",
+            "credentialId": 12
+          }
+        },
+        {
+          "provider": "google-gemini-cli",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "gemini:daily",
+              "label": "Gemini Daily",
+              "scope": {
+                "provider": "google-gemini-cli",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "email": "gem.user@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

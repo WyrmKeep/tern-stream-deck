@@ -1,0 +1,454 @@
+{
+  "name": "Accounts whose e-mail local parts are equal; sorted by credential; unnamed accounts",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "sam@example.com",
+            "credentialId": 5,
+            "subscriptionPlan": "Max 20x"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "sam@example.org",
+            "credentialId": 3,
+            "subscriptionPlan": "Max 5x"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "ops: main@example.com",
+            "credentialId": 9
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "pat@example.com"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "pat@example.net"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795469900000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "lee@example.com"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795473500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795477100000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "@example.com"
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:7d",
+              "label": "Weekly",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "g.nine@example.com",
+            "credentialId": 9
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:7d",
+              "label": "Weekly",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "g.none@example.com"
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:7d",
+              "label": "Weekly",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "@",
+            "credentialId": 2
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "Account 2@example.com"
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "xai-oauth",
+          "accountId": "acct-demo-xai-9",
+          "email": "pat@example.com"
+        },
+        {
+          "provider": "xai-oauth",
+          "accountId": "acct-demo-xai-10",
+          "email": "pat@example.com"
+        }
+      ],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

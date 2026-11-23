@@ -1,0 +1,214 @@
+{
+  "name": "Capacity whose meter matches a tier and capacity whose meter does not",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "tier": "fable"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 80,
+                "limit": 100,
+                "remaining": 20,
+                "usedFraction": 0.8,
+                "remainingFraction": 0.2,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "anthropic:7d:opus",
+              "label": "Claude 7 Day (Opus)",
+              "scope": {
+                "tier": "Opus"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 90,
+                "limit": 100,
+                "remaining": 10,
+                "usedFraction": 0.9,
+                "remainingFraction": 0.1,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "alex.sample@example.com",
+            "subscriptionPlan": "Max 20x",
+            "credentialId": 12
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "tier": "fable"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795891100000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "casey.demo@example.com",
+            "subscriptionPlan": "Max 20x",
+            "credentialId": 14
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.69,
+            "remainingAccounts": 1.31
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 1.2,
+            "remainingAccounts": 0.8,
+            "meter": "Fable"
+          },
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.3,
+            "remainingAccounts": 0.7,
+            "meter": "chat"
+          },
+          {
+            "window": "5h",
+            "accounts": 2,
+            "usedAccounts": 1.5,
+            "remainingAccounts": 0.5,
+            "meter": "opus"
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.4,
+            "remainingAccounts": 1.6,
+            "meter": 5
+          },
+          {
+            "window": "7d",
+            "accounts": 0,
+            "usedAccounts": 0,
+            "remainingAccounts": 0
+          },
+          {
+            "window": "7d",
+            "accounts": "2",
+            "usedAccounts": 1
+          },
+          {
+            "window": "7d",
+            "accounts": 2
+          },
+          {
+            "window": "7d",
+            "accounts": -1,
+            "usedAccounts": 1,
+            "remainingAccounts": -2
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 5,
+            "remainingAccounts": -3
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

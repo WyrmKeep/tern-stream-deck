@@ -1,0 +1,41 @@
+{
+  "name": "Prepaid balance, usd, no fractions, one account",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "runinfra",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "runinfra:credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "runinfra",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 36,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "notes": [
+            "Pay as you go"
+          ]
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

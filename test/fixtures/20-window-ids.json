@@ -1,0 +1,445 @@
+{
+  "name": "Window ids: 1w, 2w, 12w, 007w, 5H, 30d, Monthly, odd ids; capacity windows 1W, Monthly, missing",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "window-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "a",
+              "label": "Alpha",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "5H",
+                "shared": true
+              },
+              "window": {
+                "id": "5H",
+                "label": "5 Hour",
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "b",
+              "label": "Bravo",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c",
+              "label": "Charlie",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "2w",
+                "shared": true
+              },
+              "window": {
+                "id": "2w",
+                "label": "Fortnight",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "d",
+              "label": "Delta",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "12w",
+                "shared": true
+              },
+              "window": {
+                "id": "12w",
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "e",
+              "label": "Echo",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "30d",
+                "shared": true
+              },
+              "window": {
+                "id": "30d",
+                "label": "30 days",
+                "resetsAt": 1795891100000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "f",
+              "label": "Foxtrot",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "Monthly",
+                "shared": true
+              },
+              "window": {
+                "id": "Monthly",
+                "label": "Monthly cap",
+                "resetsAt": 1795977500000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "g",
+              "label": "Golf",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "weekly",
+                "shared": true
+              },
+              "window": {
+                "id": "weekly",
+                "label": "Weekly cap",
+                "resetsAt": 1796063900000
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "h",
+              "label": "Hotel",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "custom-window",
+                "shared": true
+              },
+              "window": {
+                "id": "custom-window",
+                "resetsAt": 1796150300000
+              },
+              "amount": {
+                "used": 15,
+                "limit": 100,
+                "remaining": 85,
+                "usedFraction": 0.15,
+                "remainingFraction": 0.85,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "i",
+              "label": "India",
+              "scope": {
+                "provider": "window-lab",
+                "shared": true
+              },
+              "window": {
+                "label": "Credits",
+                "resetsAt": 1796236700000
+              },
+              "amount": {
+                "used": 25,
+                "limit": 100,
+                "remaining": 75,
+                "usedFraction": 0.25,
+                "remainingFraction": 0.75,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "j",
+              "scope": {
+                "provider": "window-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 35,
+                "limit": 100,
+                "remaining": 65,
+                "usedFraction": 0.35,
+                "remainingFraction": 0.65,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "k",
+              "label": "Kilo",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "05h",
+                "shared": true
+              },
+              "window": {
+                "id": "05h",
+                "label": "05 hours",
+                "resetsAt": 1795495100000
+              },
+              "amount": {
+                "used": 45,
+                "limit": 100,
+                "remaining": 55,
+                "usedFraction": 0.45,
+                "remainingFraction": 0.55,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l",
+              "label": "Lima",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "007w",
+                "shared": true
+              },
+              "window": {
+                "id": "007w",
+                "label": "7 weeks",
+                "resetsAt": 1796409500000
+              },
+              "amount": {
+                "used": 55,
+                "limit": 100,
+                "remaining": 45,
+                "usedFraction": 0.55,
+                "remainingFraction": 0.45,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "m",
+              "label": "Mike",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "3d",
+                "shared": true
+              },
+              "window": {
+                "id": "3d",
+                "label": "3 days",
+                "resetsAt": 1796495900000
+              },
+              "amount": {
+                "used": 65,
+                "limit": 100,
+                "remaining": 35,
+                "usedFraction": 0.65,
+                "remainingFraction": 0.35,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "p",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "999999999999999999999w",
+                "shared": true
+              },
+              "window": {
+                "id": "999999999999999999999w",
+                "resetsAt": 1796755100000
+              },
+              "amount": {
+                "used": 90,
+                "limit": 100,
+                "remaining": 10,
+                "usedFraction": 0.9,
+                "remainingFraction": 0.1,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "q",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "99999999999999999999w",
+                "shared": true
+              },
+              "window": {
+                "id": "99999999999999999999w",
+                "resetsAt": 1796841500000
+              },
+              "amount": {
+                "used": 85,
+                "limit": 100,
+                "remaining": 15,
+                "usedFraction": 0.85,
+                "remainingFraction": 0.15,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "o",
+              "label": "Oscar",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "x",
+                "shared": true
+              },
+              "window": {
+                "id": "x",
+                "label": "",
+                "resetsAt": 1796668700000
+              },
+              "amount": {
+                "used": 80,
+                "limit": 100,
+                "remaining": 20,
+                "usedFraction": 0.8,
+                "remainingFraction": 0.2,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "n",
+              "label": "November",
+              "scope": {
+                "provider": "window-lab",
+                "windowId": "",
+                "shared": true
+              },
+              "window": {
+                "id": "",
+                "label": "Empty id",
+                "resetsAt": 1796582300000
+              },
+              "amount": {
+                "used": 75,
+                "limit": 100,
+                "remaining": 25,
+                "usedFraction": 0.75,
+                "remainingFraction": 0.25,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {
+        "window-lab": [
+          {
+            "window": "1W",
+            "accounts": 1,
+            "usedAccounts": 0.5,
+            "remainingAccounts": 0.5
+          },
+          {
+            "window": "5H",
+            "accounts": 1,
+            "usedAccounts": 0.2,
+            "remainingAccounts": 0.8
+          },
+          {
+            "window": "Monthly",
+            "accounts": 1,
+            "usedAccounts": 0.3,
+            "remainingAccounts": 0.7
+          },
+          {
+            "accounts": 1,
+            "usedAccounts": 0.1
+          },
+          {
+            "window": "14d",
+            "accounts": 1,
+            "usedAccounts": 0.4,
+            "remainingAccounts": 0.6
+          },
+          {
+            "window": "weekly",
+            "accounts": 1,
+            "usedAccounts": 0.45,
+            "remainingAccounts": 0.55
+          },
+          {
+            "window": "30d",
+            "accounts": 1,
+            "usedAccounts": 0.5,
+            "remainingAccounts": 0.5
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

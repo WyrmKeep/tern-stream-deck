@@ -1,0 +1,221 @@
+{
+  "name": "google-antigravity keeps only Gemini limits, ignores capacity; google-gemini-cli keeps all",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "google-antigravity",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "ag:g3pro",
+              "label": "Gemini 3 Pro (High)",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "ag:claude",
+              "label": "Claude Sonnet 4.5 (Thinking)",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 99,
+                "limit": 100,
+                "remaining": 1,
+                "usedFraction": 0.99,
+                "remainingFraction": 0.01,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "ag:g3flash",
+              "label": "GEMINI 3 Flash",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795469900000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "ag:nolabel",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 77,
+                "limit": 100,
+                "remaining": 23,
+                "usedFraction": 0.77,
+                "remainingFraction": 0.23,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "ag:imagen",
+              "label": "Imagen",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "email": "gem.ag@example.com",
+            "credentialId": 5
+          }
+        },
+        {
+          "provider": "google-gemini-cli",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "gcli:pro",
+              "label": "Gemini 2.5 Pro",
+              "scope": {
+                "provider": "google-gemini-cli",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795491500000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "gcli:daily",
+              "label": "Daily requests",
+              "scope": {
+                "provider": "google-gemini-cli",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795491500000
+              },
+              "amount": {
+                "used": 45,
+                "limit": 100,
+                "remaining": 55,
+                "usedFraction": 0.45,
+                "remainingFraction": 0.55,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "gem.cli@example.com",
+            "credentialId": 4
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [
+        {
+          "provider": "google-gemini-cli",
+          "cause": "quota exceeded"
+        }
+      ],
+      "capacity": {
+        "google-antigravity": [
+          {
+            "window": "5h",
+            "accounts": 1,
+            "usedAccounts": 0.9,
+            "remainingAccounts": 0.09999999999999998
+          }
+        ],
+        "google-gemini-cli": [
+          {
+            "window": "1d",
+            "accounts": 1,
+            "usedAccounts": 0.95,
+            "remainingAccounts": 0.050000000000000044
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

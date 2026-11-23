@@ -1,0 +1,12 @@
+{
+  "name": "data is an empty object",
+  "input": {
+    "data": {},
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795458200000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

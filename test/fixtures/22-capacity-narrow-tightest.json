@@ -1,0 +1,127 @@
+{
+  "name": "Tightest window: non-narrow preferred; only-narrow falls back",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "tier": "fable"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 90,
+                "limit": 100,
+                "remaining": 10,
+                "usedFraction": 0.9,
+                "remainingFraction": 0.1,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "alex.sample@example.com"
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:7d",
+              "label": "Weekly",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "x:7d:heavy",
+              "label": "Weekly Heavy",
+              "scope": {
+                "tier": "heavy"
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 95,
+                "limit": 100,
+                "remaining": 5,
+                "usedFraction": 0.95,
+                "remainingFraction": 0.05,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "devon.fixture@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.9,
+            "remainingAccounts": 0.09999999999999998,
+            "meter": "fable"
+          }
+        ],
+        "xai-oauth": [
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.3,
+            "remainingAccounts": 0.7
+          },
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.95,
+            "remainingAccounts": 0.050000000000000044,
+            "meter": "heavy"
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

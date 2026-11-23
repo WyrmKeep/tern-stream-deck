@@ -1,0 +1,376 @@
+{
+  "name": "Lua %s and %w are ASCII only: NBSP, em space, VT, FF; non-ASCII letters split words",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "space-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "s:1",
+              "label": "key: value",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:2",
+              "label": "k:\u000bv",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:3",
+              "label": "k:\fv",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:4",
+              "label": "k:\tv",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:5",
+              "label": "k:\nv",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:6",
+              "label": "k: v",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:7",
+              "label": "Twelve chars  extra long",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:8",
+              "label": "Twelve chars  extra long",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 80,
+                "limit": 100,
+                "remaining": 20,
+                "usedFraction": 0.8,
+                "remainingFraction": 0.2,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:9",
+              "label": "Twelve chars\t\textra long",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 15,
+                "limit": 100,
+                "remaining": 85,
+                "usedFraction": 0.15,
+                "remainingFraction": 0.85,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:10",
+              "label": "Twelve chars\u000b\fextra long",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 25,
+                "limit": 100,
+                "remaining": 75,
+                "usedFraction": 0.25,
+                "remainingFraction": 0.75,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "s:11",
+              "label": "Twelve chars\r\nextra long",
+              "scope": {
+                "provider": "space-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 35,
+                "limit": 100,
+                "remaining": 65,
+                "usedFraction": 0.35,
+                "remainingFraction": 0.65,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "a: b@example.com"
+          }
+        },
+        {
+          "provider": "space-lab-two",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:7d:a b",
+              "label": "Same",
+              "scope": {
+                "provider": "space-lab-two",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "x:7d:c d",
+              "label": "Same",
+              "scope": {
+                "provider": "space-lab-two",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "a\u000bb@example.com"
+          }
+        },
+        {
+          "provider": "word-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "usage",
+              "label": "Café 7 Day",
+              "scope": {
+                "provider": "word-lab",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "usage",
+              "label": "Über 7 Day",
+              "scope": {
+                "provider": "word-lab",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "word-lab-two",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "usage",
+              "label": "Weekly naïve plan",
+              "scope": {
+                "provider": "word-lab-two",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "usage",
+              "label": "Weekly 7d_x-y plan",
+              "scope": {
+                "provider": "word-lab-two",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

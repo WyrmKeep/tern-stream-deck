@@ -1,0 +1,592 @@
+{
+  "name": "Percent rounding and level thresholds; amount shapes",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "rate-01",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-02",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.004,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-03",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.005,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-04",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.0049999,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-05",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.494999,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-06",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.495,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-07",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-08",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.7949,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-09",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-10",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.9449999,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-11",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.95,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-12",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.99499,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-13",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 0.995,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-14",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 1,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-15",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": 1.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-16",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": -0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-17",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "remainingFraction": 0.2,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-18",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "usedFraction": "0.9",
+                "remainingFraction": 0.75
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-19",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "limit": 8,
+                "used": 3
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-20",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "limit": 8,
+                "remaining": 3
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-21",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "limit": 0,
+                "used": 3
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "rate-22",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "r",
+              "label": "Rate",
+              "scope": {
+                "provider": "rate",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "limit": 10,
+                "used": "3",
+                "remaining": 4
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

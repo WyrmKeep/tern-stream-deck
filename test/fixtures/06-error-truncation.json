@@ -1,0 +1,49 @@
+{
+  "name": "error cut at 40 code points: non-ASCII, trailing space",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795199900000,
+    "loading": null,
+    "error": "Aktualisierung fehlgeschlagen: Zeitüberschreitung beim Lesen der Nutzung von omp",
+    "placed": []
+  }
+}

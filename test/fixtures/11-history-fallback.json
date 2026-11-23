@@ -1,0 +1,309 @@
+{
+  "name": "Report without limits; limits come from omp's usage history",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {
+            "credentialId": 3,
+            "email": "alex.sample@example.com"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {
+            "email": "codex.user@example.com"
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {}
+        },
+        {
+          "provider": "runinfra",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "opencode-go",
+          "type": "oauth",
+          "accountId": "acct-demo-oc-01"
+        }
+      ],
+      "disabledCredentials": [
+        {
+          "id": 13,
+          "provider": "anthropic",
+          "cause": "oauth refresh failed",
+          "email": "robin.old@example.com"
+        }
+      ],
+      "capacity": {
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 1.9,
+            "remainingAccounts": 0.10000000000000009
+          }
+        ]
+      }
+    },
+    "history": {
+      "generatedAt": 1795459100000,
+      "sinceMs": 1795372700000,
+      "entries": [
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.2,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.30000000000000004,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.3,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.4,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795455500000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.4,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795455500000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "accountId": "acct-demo-claude-01",
+          "limitId": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.5,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795458500000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-b",
+          "email": "casey.demo@example.com",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.7,
+          "status": "ok",
+          "resetsAt": 1795545500000
+        },
+        {
+          "recordedAt": 1795457900000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-b",
+          "email": "casey.demo@example.com",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.1,
+          "status": "ok",
+          "resetsAt": 1795545500000
+        },
+        {
+          "recordedAt": 1795457900000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-b",
+          "email": "casey.demo@example.com",
+          "limitId": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.5,
+          "status": "ok",
+          "resetsAt": 1795545500000
+        },
+        {
+          "recordedAt": 1795457900000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-b",
+          "email": "casey.demo@example.com",
+          "limitId": "anthropic:7d:fable",
+          "label": "Claude 7 Day (Fable)",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.9,
+          "status": "ok",
+          "resetsAt": 1795545500000
+        },
+        {
+          "recordedAt": 1795441100000,
+          "provider": "openai-codex",
+          "accountKey": "codex-demo|1",
+          "email": "codex.user@example.com",
+          "limitId": "openai-codex:primary",
+          "label": "5 hours",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.29,
+          "status": "ok",
+          "resetsAt": 1795455500000
+        },
+        {
+          "recordedAt": 1795444700000,
+          "provider": "openai-codex",
+          "accountKey": "codex-demo|1",
+          "email": "codex.user@example.com",
+          "limitId": "openai-codex:primary",
+          "label": "5 hours",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.31,
+          "status": "ok",
+          "resetsAt": 1795462700000
+        },
+        {
+          "recordedAt": 1795444700000,
+          "provider": "openai-codex",
+          "accountKey": "codex-demo|1",
+          "email": "codex.user@example.com",
+          "limitId": "openai-codex:secondary",
+          "label": "7 days",
+          "windowLabel": "7 days",
+          "usedFraction": 0.05,
+          "status": "ok",
+          "resetsAt": 1795891100000
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "xai-oauth",
+          "accountKey": "xai-demo|1",
+          "limitId": "xai-oauth:credits:1w",
+          "label": "SuperGrok Weekly Credits",
+          "windowLabel": "Weekly",
+          "usedFraction": 0.23,
+          "status": "ok",
+          "resetsAt": 1795631900000
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "xai-oauth",
+          "accountKey": "xai-demo|1",
+          "limitId": "xai-oauth:product:grokbot:1w",
+          "label": "GrokBot (Weekly)",
+          "windowLabel": "Weekly",
+          "usedFraction": 0.41,
+          "status": "ok",
+          "resetsAt": 1795631900000
+        },
+        {
+          "recordedAt": 1795454900000,
+          "provider": "opencode-go",
+          "accountKey": "oc-demo|1",
+          "limitId": "rolling-5h",
+          "label": "5 Hour limit",
+          "windowLabel": "5 Hour",
+          "usedFraction": 0,
+          "status": "ok",
+          "resetsAt": 1795469900000
+        },
+        {
+          "recordedAt": 1795454900000,
+          "provider": "opencode-go",
+          "accountKey": "oc-demo|1",
+          "limitId": "weekly",
+          "label": "Weekly limit",
+          "windowLabel": "Weekly",
+          "usedFraction": 0.07,
+          "status": "ok",
+          "resetsAt": 1795718300000
+        },
+        {
+          "recordedAt": 1795454900000,
+          "provider": "opencode-go",
+          "accountKey": "oc-demo|1",
+          "limitId": "monthly",
+          "label": "Monthly limit",
+          "windowLabel": "Monthly",
+          "status": "exhausted",
+          "resetsAt": 1796495900000
+        },
+        {
+          "recordedAt": 1795199900000,
+          "provider": "runinfra",
+          "accountKey": "run-demo|1",
+          "limitId": "runinfra:credits",
+          "label": "Credits",
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795199900000,
+          "provider": "devin",
+          "accountKey": "devin-demo|1",
+          "limitId": "devin:quota:weekly",
+          "label": "Weekly Quota",
+          "windowLabel": "Weekly Quota",
+          "usedFraction": 1,
+          "status": "exhausted"
+        }
+      ]
+    },
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

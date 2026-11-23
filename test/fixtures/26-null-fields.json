@@ -1,0 +1,171 @@
+{
+  "name": "JSON null and wrong-typed fields behave as nil",
+  "input": {
+    "data": {
+      "generatedAt": 1795459100000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "limits": [
+            {
+              "id": null,
+              "label": null,
+              "window": null,
+              "scope": null,
+              "amount": null,
+              "status": null
+            }
+          ],
+          "metadata": null
+        },
+        {
+          "provider": "openai-codex",
+          "limits": [
+            {
+              "id": "c:1",
+              "label": "5 hours",
+              "window": {
+                "id": "5h",
+                "label": null,
+                "resetsAt": "soon"
+              },
+              "amount": {
+                "usedFraction": "0.5",
+                "remainingFraction": 0.25
+              },
+              "status": 7
+            }
+          ],
+          "metadata": {
+            "email": "",
+            "credentialId": "7",
+            "planType": null
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "limits": null,
+          "metadata": {
+            "email": null
+          }
+        },
+        {
+          "provider": null,
+          "limits": []
+        },
+        {
+          "provider": "xai-oauth",
+          "limits": [
+            {
+              "id": "x:1",
+              "label": "Zero limit",
+              "amount": {
+                "limit": 0,
+                "used": 1
+              }
+            },
+            {
+              "id": "x:2",
+              "label": "Left of ten",
+              "amount": {
+                "limit": 10,
+                "remaining": 4
+              }
+            },
+            {
+              "id": "x:3",
+              "label": "Used of ten",
+              "amount": {
+                "limit": 10,
+                "used": 2
+              }
+            },
+            {
+              "id": "x:4",
+              "label": "Scope string",
+              "scope": "oops",
+              "window": "oops",
+              "amount": "oops"
+            },
+            {
+              "id": "x:5",
+              "label": "Balance and used",
+              "amount": {
+                "remaining": 8,
+                "used": null,
+                "limit": null,
+                "unit": null
+              }
+            }
+          ],
+          "metadata": {
+            "email": "xai.user@example.com"
+          }
+        },
+        {
+          "provider": "devin",
+          "limits": [
+            {
+              "id": "d:1",
+              "label": "No amount",
+              "window": {
+                "id": "7d",
+                "resetsAt": null
+              }
+            }
+          ],
+          "metadata": {
+            "credentialId": 3,
+            "email": 12
+          }
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "opencode-zen",
+          "email": 5
+        },
+        {
+          "provider": null
+        },
+        {
+          "provider": "opencode-zen",
+          "email": null
+        }
+      ],
+      "disabledCredentials": [
+        {
+          "provider": "openai-codex",
+          "cause": null
+        },
+        {
+          "provider": "anthropic",
+          "cause": "REFRESH Token",
+          "email": "@example.com"
+        },
+        {
+          "provider": "anthropic",
+          "cause": 5
+        }
+      ],
+      "capacity": {
+        "xai-oauth": null,
+        "anthropic": [
+          {
+            "window": null,
+            "accounts": 1,
+            "usedAccounts": 0.5
+          }
+        ]
+      }
+    },
+    "history": {
+      "entries": null
+    },
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

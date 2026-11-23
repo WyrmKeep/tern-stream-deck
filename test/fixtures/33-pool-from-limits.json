@@ -1,0 +1,198 @@
+{
+  "name": "No capacity: pool from limits, earliest future reset, past resets ignored",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "monthly",
+              "label": "Monthly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "monthly",
+                "shared": true
+              },
+              "window": {
+                "id": "monthly",
+                "label": "Monthly",
+                "resetsAt": 1797187100000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "credentialId": 8
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795455500000
+              },
+              "amount": {
+                "used": 90,
+                "limit": 100,
+                "remaining": 10,
+                "usedFraction": 0.9,
+                "remainingFraction": 0.1,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "monthly",
+              "label": "Monthly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "monthly",
+                "shared": true
+              },
+              "window": {
+                "id": "monthly",
+                "label": "Monthly"
+              },
+              "amount": {
+                "used": 35,
+                "limit": 100,
+                "remaining": 65,
+                "usedFraction": 0.35,
+                "remainingFraction": 0.65,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "credentialId": 16
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795718300000
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "credentialId": 20
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

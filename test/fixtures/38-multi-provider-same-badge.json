@@ -1,0 +1,94 @@
+{
+  "name": "A badge with two providers; capacity on one of them only",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "alex.sample@example.com",
+            "credentialId": 1
+          }
+        },
+        {
+          "provider": "anthropic-bedrock",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "bedrock:7d",
+              "label": "Bedrock 7 Day",
+              "scope": {
+                "provider": "anthropic-bedrock",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795631900000
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "bedrock.user@example.com",
+            "credentialId": 2
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 1.2,
+            "remainingAccounts": 0.8
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

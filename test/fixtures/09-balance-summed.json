@@ -1,0 +1,267 @@
+{
+  "name": "Prepaid balances summed over two accounts; ties, negatives, other units",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "runinfra",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "runinfra:credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "runinfra",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 36,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "billing.one@example.com",
+            "credentialId": 1
+          }
+        },
+        {
+          "provider": "runinfra",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "runinfra:credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "runinfra",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 12.5,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "billing.two@example.com",
+            "credentialId": 2
+          }
+        },
+        {
+          "provider": "tie-credits",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "tie:a",
+              "label": "Tie a",
+              "scope": {
+                "provider": "tie-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 7.125,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "tie:b",
+              "label": "Tie b",
+              "scope": {
+                "provider": "tie-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0.375,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "tie:c",
+              "label": "Tie c",
+              "scope": {
+                "provider": "tie-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0.625,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "tie:d",
+              "label": "Tie d",
+              "scope": {
+                "provider": "tie-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 2.675,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "owing",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "owing:credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "owing",
+                "shared": true
+              },
+              "amount": {
+                "remaining": -3.5,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "acme-credits",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "acme:a",
+              "label": "Credits A",
+              "scope": {
+                "provider": "acme-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 7.125,
+                "unit": "credits"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "acme.a@example.com"
+          }
+        },
+        {
+          "provider": "acme-credits",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "acme:b",
+              "label": "Credits B",
+              "scope": {
+                "provider": "acme-credits",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 250.5,
+                "unit": "credits"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "acme.b@example.com"
+          }
+        },
+        {
+          "provider": "percent-unit",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "p:a",
+              "label": "Left",
+              "scope": {
+                "provider": "percent-unit",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "upper-unit",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "u:a",
+              "label": "Left",
+              "scope": {
+                "provider": "upper-unit",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 5,
+                "unit": "USD"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "empty-unit",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "e:a",
+              "label": "Left",
+              "scope": {
+                "provider": "empty-unit",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 5.5,
+                "unit": ""
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "bare-unit",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "b:a",
+              "label": "Left",
+              "scope": {
+                "provider": "bare-unit",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 5
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

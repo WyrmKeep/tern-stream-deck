@@ -1,0 +1,632 @@
+{
+  "name": "error set while data is shown; fetched three hours ago",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795472900000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "openai-codex:secondary",
+              "label": "7 days",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "durationMs": 604800000,
+                "resetsAt": 1795977500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "resetCredits": {
+            "availableCount": 0
+          },
+          "metadata": {
+            "planType": "plus",
+            "allowed": true,
+            "limitReached": false,
+            "email": "codex.user@example.com",
+            "accountId": "acct-demo-codex-01",
+            "meterStates": {
+              "chat": {
+                "allowed": true,
+                "limitReached": false
+              }
+            },
+            "orgId": "org-demo-0001",
+            "orgName": "Demo Org",
+            "credentialId": 2
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "durationMs": 18000000,
+                "resetsAt": 1795473500000
+              },
+              "amount": {
+                "used": 7,
+                "usedFraction": 0.07,
+                "remainingFraction": 0.93,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "durationMs": 604800000,
+                "resetsAt": 1795984700000
+              },
+              "amount": {
+                "used": 7,
+                "usedFraction": 0.07,
+                "remainingFraction": 0.93,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "monthly",
+              "label": "Monthly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "monthly",
+                "shared": true
+              },
+              "window": {
+                "id": "monthly",
+                "label": "Monthly",
+                "resetsAt": 1797273500000
+              },
+              "amount": {
+                "used": 4,
+                "usedFraction": 0.04,
+                "remainingFraction": 0.96,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "OpenCode Go",
+            "endpoint": "https://opencode.example.com/zen/go/v1/usage",
+            "credentialId": 8
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "durationMs": 18000000,
+                "resetsAt": 1795473500000
+              },
+              "amount": {
+                "used": 2,
+                "usedFraction": 0.02,
+                "remainingFraction": 0.98,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "durationMs": 604800000,
+                "resetsAt": 1795984700000
+              },
+              "amount": {
+                "used": 4,
+                "usedFraction": 0.04,
+                "remainingFraction": 0.96,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "monthly",
+              "label": "Monthly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "monthly",
+                "shared": true
+              },
+              "window": {
+                "id": "monthly",
+                "label": "Monthly",
+                "resetsAt": 1795649900000
+              },
+              "amount": {
+                "used": 100,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "planType": "OpenCode Go",
+            "endpoint": "https://opencode.example.com/zen/go/v1/usage",
+            "credentialId": 16
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "durationMs": 604800000,
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 61,
+                "limit": 100,
+                "remaining": 39,
+                "usedFraction": 0.61,
+                "remainingFraction": 0.39,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "tier": "fable"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "durationMs": 604800000,
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 77,
+                "limit": 100,
+                "remaining": 23,
+                "usedFraction": 0.77,
+                "remainingFraction": 0.23,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "resetCredits": {
+            "availableCount": 0,
+            "redeemableCount": 0,
+            "eligible": false,
+            "reason": "not_at_wall",
+            "credits": []
+          },
+          "metadata": {
+            "endpoint": "https://api.example.com/api/oauth/usage",
+            "accountId": "acct-demo-claude-02",
+            "email": "casey.demo@example.com",
+            "orgId": "org-demo-0002",
+            "inactiveSharedGates": [
+              "5h"
+            ],
+            "subscriptionPlan": "Max 20x",
+            "credentialId": 14
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "durationMs": 604800000,
+                "resetsAt": 1795811900000
+              },
+              "amount": {
+                "used": 8,
+                "limit": 100,
+                "remaining": 92,
+                "usedFraction": 0.08,
+                "remainingFraction": 0.92,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "tier": "fable"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "durationMs": 604800000,
+                "resetsAt": 1795811900000
+              },
+              "amount": {
+                "used": 16,
+                "limit": 100,
+                "remaining": 84,
+                "usedFraction": 0.16,
+                "remainingFraction": 0.84,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "resetCredits": {
+            "availableCount": 1,
+            "redeemableCount": 1,
+            "nextCreditId": "full-reset-demo",
+            "eligible": true,
+            "credits": [
+              {
+                "id": "full-reset-demo",
+                "title": "One full limit reset",
+                "remainingCount": 1,
+                "usable": true,
+                "clears": [
+                  "anthropic:7d",
+                  "anthropic:7d:fable"
+                ],
+                "status": "available"
+              }
+            ]
+          },
+          "metadata": {
+            "accountId": "acct-demo-claude-01",
+            "email": "alex.sample@example.com",
+            "orgId": "org-demo-0001",
+            "orgName": "Demo Org",
+            "inactiveSharedGates": [
+              "5h"
+            ],
+            "subscriptionPlan": "Max 20x",
+            "headersUpdatedAt": 1795459070000,
+            "credentialId": 12
+          }
+        },
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "xai-oauth:credits:1w",
+              "label": "SuperGrok Weekly Credits",
+              "scope": {
+                "provider": "xai-oauth",
+                "accountId": "acct-demo-xai-01",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "durationMs": 604800000,
+                "resetsAt": 1795671500000
+              },
+              "amount": {
+                "used": 23,
+                "limit": 100,
+                "remaining": 77,
+                "usedFraction": 0.23,
+                "remainingFraction": 0.77,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "xai-oauth:product:grokbot:1w",
+              "label": "GrokBot (Weekly)",
+              "scope": {
+                "provider": "xai-oauth",
+                "accountId": "acct-demo-xai-01",
+                "windowId": "1w",
+                "shared": true
+              },
+              "window": {
+                "id": "1w",
+                "label": "Weekly",
+                "durationMs": 604800000,
+                "resetsAt": 1795671500000
+              },
+              "amount": {
+                "used": 23,
+                "limit": 100,
+                "remaining": 77,
+                "usedFraction": 0.23,
+                "remainingFraction": 0.77,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "endpoint": "https://billing.example.com/v1/billing?format=credits",
+            "billingKind": "weekly",
+            "accountId": "acct-demo-xai-01",
+            "email": "devon.fixture@example.com",
+            "credentialId": 18
+          }
+        },
+        {
+          "provider": "devin",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "devin:quota:weekly",
+              "label": "Weekly Quota",
+              "scope": {
+                "provider": "devin",
+                "accountId": "acct-demo-devin-01",
+                "orgId": "org-demo-devin",
+                "tier": "Max",
+                "windowId": "7d"
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly Quota",
+                "durationMs": 604800000,
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "notes": [
+            "Overage balance: $-0.39"
+          ],
+          "metadata": {
+            "source": "seat-management",
+            "email": "jordan.demo@example.com",
+            "accountId": "acct-demo-devin-01",
+            "planType": "Max",
+            "overageBalanceUsd": -0.386707,
+            "credentialId": 19
+          }
+        },
+        {
+          "provider": "runinfra",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "runinfra:credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "runinfra",
+                "accountId": "acct-demo-run-01",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 36,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "notes": [
+            "Pay as you go · $0.00 spent this period"
+          ]
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "kimi-code",
+          "type": "oauth",
+          "accountId": "acct-demo-kimi-01",
+          "authorizedAt": 1793731100000
+        }
+      ],
+      "disabledCredentials": [
+        {
+          "id": 13,
+          "provider": "anthropic",
+          "type": "oauth",
+          "cause": "oauth refresh failed: OAuthError: token refresh failed: 400 {\"error\": \"invalid_grant\", \"error_description\": \"Refresh token expired\"}",
+          "email": "robin.old@example.com",
+          "accountId": "acct-demo-claude-00",
+          "orgId": "org-demo-0000",
+          "orgName": "Old Org",
+          "disabledAtMs": 1794595100000
+        },
+        {
+          "id": 15,
+          "provider": "mcp_oauth:profile:default:https://mcp.example.com/mcp",
+          "type": "oauth",
+          "cause": "oauth refresh failed: MCP OAuth refresh failed: 400 {\"error\":\"invalid_grant\"}",
+          "disabledAtMs": 1795027100000
+        }
+      ],
+      "capacity": {
+        "openai-codex": [
+          {
+            "window": "5h",
+            "accounts": 1,
+            "usedAccounts": 0.4,
+            "remainingAccounts": 0.6,
+            "meter": "chat",
+            "durationMs": 18000000
+          },
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.4,
+            "remainingAccounts": 0.6,
+            "meter": "chat",
+            "durationMs": 604800000
+          }
+        ],
+        "opencode-go": [
+          {
+            "window": "5h",
+            "accounts": 2,
+            "usedAccounts": 0.09,
+            "remainingAccounts": 1.91,
+            "durationMs": 18000000
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.11,
+            "remainingAccounts": 1.89,
+            "durationMs": 604800000
+          },
+          {
+            "window": "Monthly",
+            "accounts": 2,
+            "usedAccounts": 1.04,
+            "remainingAccounts": 0.96
+          }
+        ],
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.69,
+            "remainingAccounts": 1.31,
+            "durationMs": 604800000
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.93,
+            "remainingAccounts": 1.0699999999999998,
+            "meter": "fable",
+            "durationMs": 604800000
+          }
+        ],
+        "xai-oauth": [
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 0.23,
+            "remainingAccounts": 0.77,
+            "durationMs": 604800000
+          }
+        ],
+        "devin": [
+          {
+            "window": "7d",
+            "accounts": 1,
+            "usedAccounts": 1,
+            "remainingAccounts": 0,
+            "durationMs": 604800000
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795448300000,
+    "loading": null,
+    "error": "spawn omp: ENOENT: no such file or directory, posix_spawn '/opt/omp/bin/omp'",
+    "placed": []
+  }
+}

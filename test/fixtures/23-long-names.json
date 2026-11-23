@@ -1,0 +1,334 @@
+{
+  "name": "E-mail names over 20 characters and labels over 14, with non-ASCII",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "jürgen.müller-schmidt.longname@example.com",
+            "credentialId": 1,
+            "subscriptionPlan": "Max"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "abcdefghijklmnopqr stuvwxyz@example.com",
+            "credentialId": 2,
+            "subscriptionPlan": "Pro"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "twentycharslocalpart@example.com",
+            "credentialId": 3,
+            "subscriptionPlan": "élite"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "twentyonecharslocalpt@example.com",
+            "credentialId": 4,
+            "subscriptionPlan": ""
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d",
+              "label": "Claude 7 Day",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795718300000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀@example.com",
+            "credentialId": 5
+          }
+        },
+        {
+          "provider": "label-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "l:1",
+              "label": "Très long étiquette de limite",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 10,
+                "limit": 100,
+                "remaining": 90,
+                "usedFraction": 0.1,
+                "remainingFraction": 0.9,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:2",
+              "label": "Exactly14chars",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:3",
+              "label": "Fifteen chars!!",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:4",
+              "label": "Total: 1000 requests",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:5",
+              "label": "Twelve chars  extra long",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:6",
+              "label": "Café über alles großartig",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:7",
+              "label": "😀😁 emoji labels galore",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "l:8",
+              "label": "key: value",
+              "scope": {
+                "provider": "label-lab",
+                "shared": true
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "xxxxxxxxxxxxxxxxxxxxxxxxx@example.com",
+            "planType": 20
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

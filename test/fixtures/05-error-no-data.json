@@ -1,0 +1,12 @@
+{
+  "name": "error set, data nil",
+  "input": {
+    "data": null,
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": null,
+    "loading": null,
+    "error": "timed out after 30 s",
+    "placed": []
+  }
+}

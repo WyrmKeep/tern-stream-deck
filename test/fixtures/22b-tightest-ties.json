@@ -1,0 +1,195 @@
+{
+  "name": "Equal used fractions: the first window is the tightest, narrow or not",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "tie-plain",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:a",
+              "label": "A",
+              "scope": {
+                "provider": "tie-plain",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            },
+            {
+              "id": "t:b",
+              "label": "B",
+              "scope": {
+                "provider": "tie-plain",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "tie-narrow",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:a",
+              "label": "A",
+              "scope": {
+                "tier": "fast"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            },
+            {
+              "id": "t:b",
+              "label": "B",
+              "scope": {
+                "tier": "slow"
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "tie-mixed",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:a",
+              "label": "A",
+              "scope": {
+                "tier": "fast"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 70,
+                "limit": 100,
+                "remaining": 30,
+                "usedFraction": 0.7,
+                "remainingFraction": 0.3,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "t:b",
+              "label": "B",
+              "scope": {
+                "provider": "tie-mixed",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "t:c",
+              "label": "C",
+              "scope": {
+                "provider": "tie-mixed",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795469900000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

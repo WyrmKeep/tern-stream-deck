@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="pi.css" />
+		<script>
+			function connectElgatoStreamDeckSocket(port, uuid, registerEvent, info, actionInfo) {
+				const action = JSON.parse(actionInfo);
+				const input = document.getElementById("command");
+				input.value = action.payload.settings?.command ?? "";
+
+				const socket = new WebSocket("ws://127.0.0.1:" + port);
+				socket.onopen = () => socket.send(JSON.stringify({ event: registerEvent, uuid }));
+				input.oninput = () => socket.send(JSON.stringify({ event: "setSettings", context: action.context, payload: { command: input.value } }));
+			}
+		</script>
+	</head>
+	<body>
+		<div class="row">
+			<label for="command">Command</label>
+			<input id="command" type="text" list="commands" placeholder="empty: a plain shell" spellcheck="false" />
+			<datalist id="commands"><option value="omp"></option></datalist>
+		</div>
+		<p class="hint">Typed into the new tab's shell, so the tab stays when the command ends.</p>
+	</body>
+</html>

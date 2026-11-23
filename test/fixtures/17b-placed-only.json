@@ -1,0 +1,17 @@
+{
+  "name": "Placed ids with no data at all",
+  "input": {
+    "data": {},
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": [
+      "alpha",
+      "beta",
+      "alpha",
+      "Alpha"
+    ]
+  }
+}

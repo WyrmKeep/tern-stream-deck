@@ -1,0 +1,365 @@
+{
+  "name": "Plan words: tier equal to the plan is dropped; planType versus subscriptionPlan",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "devin",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "devin:quota:weekly",
+              "label": "Weekly Quota",
+              "scope": {
+                "tier": "Max"
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly Quota",
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "jordan.demo@example.com",
+            "planType": "Max"
+          }
+        },
+        {
+          "provider": "devin",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "devin:quota:weekly",
+              "label": "Weekly Quota",
+              "scope": {
+                "tier": "Max"
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly Quota",
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 60,
+                "limit": 100,
+                "remaining": 40,
+                "usedFraction": 0.6,
+                "remainingFraction": 0.4,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "jordan.two@example.com",
+            "planType": "Team"
+          }
+        },
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "anthropic:7d:fable",
+              "label": "Claude 7 Day (Fable)",
+              "scope": {
+                "tier": "FABLE"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795804700000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "alex.sample@example.com",
+            "subscriptionPlan": "max 5x"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "openai-codex:primary",
+              "label": "5 hours",
+              "scope": {
+                "tier": "PLUS"
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "durationMs": 18000000,
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "codex.user@example.com",
+            "planType": "Plus"
+          }
+        },
+        {
+          "provider": "tier-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "tier": "pro"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "subscriptionPlan": "Team",
+            "planType": "Pro"
+          }
+        },
+        {
+          "provider": "tier-lab",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "tier": "pro"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 30,
+                "limit": 100,
+                "remaining": 70,
+                "usedFraction": 0.3,
+                "remainingFraction": 0.7,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "Pro"
+          }
+        },
+        {
+          "provider": "tier-lab-two",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "provider": "tier-lab-two",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": 20
+          }
+        },
+        {
+          "provider": "tier-lab-three",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "provider": "tier-lab-three",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": ""
+          }
+        },
+        {
+          "provider": "tier-lab-four",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "provider": "tier-lab-four",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "élite",
+            "email": "plan.four@example.com"
+          }
+        },
+        {
+          "provider": "tier-lab-six",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "tier": "ßeta"
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "ßeta plan",
+            "email": "plan.six@example.com"
+          }
+        },
+        {
+          "provider": "tier-lab-five",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "t:1",
+              "label": "Tier",
+              "scope": {
+                "provider": "tier-lab-five",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 Day",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "planType": "ab: cd"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "name": "JSON null inside arrays: ipairs stops at the first nil",
+  "input": {
+    "data": {
+      "generatedAt": 1795459100000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "a:1",
+              "label": "Before hole",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            null,
+            {
+              "id": "a:2",
+              "label": "After hole",
+              "scope": {
+                "provider": "anthropic",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "hole.one@example.com"
+          }
+        },
+        {
+          "provider": "openai-codex",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            null,
+            {
+              "id": "c:1",
+              "label": "Hidden",
+              "scope": {
+                "provider": "openai-codex",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "hole.two@example.com"
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            null,
+            null
+          ],
+          "metadata": {
+            "email": "hole.three@example.com"
+          }
+        },
+        null,
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "x:1",
+              "label": "Never read",
+              "scope": {
+                "provider": "xai-oauth",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 40,
+                "limit": 100,
+                "remaining": 60,
+                "usedFraction": 0.4,
+                "remainingFraction": 0.6,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "hole.four@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [
+        {
+          "provider": "kimi-code"
+        },
+        null,
+        {
+          "provider": "other-code"
+        }
+      ],
+      "disabledCredentials": [
+        {
+          "provider": "anthropic",
+          "cause": "refresh",
+          "email": "hole.dis@example.com"
+        },
+        null,
+        {
+          "provider": "anthropic",
+          "cause": "refresh",
+          "email": "hole.dis2@example.com"
+        }
+      ],
+      "capacity": {
+        "anthropic": [
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 1,
+            "remainingAccounts": 1
+          },
+          null,
+          {
+            "window": "5h",
+            "accounts": 2,
+            "usedAccounts": 0.5,
+            "remainingAccounts": 1.5
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": [
+      "alpha",
+      null,
+      "beta"
+    ]
+  }
+}

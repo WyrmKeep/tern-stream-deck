@@ -1,0 +1,180 @@
+{
+  "name": "Exhausted status without a fraction; with a balance",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795469900000
+              },
+              "amount": {
+                "unit": "percent"
+              },
+              "status": "exhausted"
+            },
+            {
+              "id": "weekly",
+              "label": "Weekly limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "Weekly",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "credentialId": 1
+          }
+        },
+        {
+          "provider": "opencode-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "rolling-5h",
+              "label": "5 Hour limit",
+              "scope": {
+                "provider": "opencode-go",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 Hour",
+                "resetsAt": 1795477100000
+              },
+              "amount": {
+                "remaining": 0,
+                "unit": "usd"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {
+            "credentialId": 2
+          }
+        },
+        {
+          "provider": "pay-go",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "pay-go",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0,
+                "unit": "usd"
+              },
+              "status": "exhausted"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "pay-go-two",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "credits",
+              "label": "Credits",
+              "scope": {
+                "provider": "pay-go-two",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 12,
+                "unit": "usd"
+              },
+              "status": "exhausted"
+            },
+            {
+              "id": "other",
+              "label": "Other",
+              "scope": {
+                "provider": "pay-go-two",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 3,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "unknown-status",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "u:1",
+              "label": "Usage",
+              "scope": {
+                "provider": "unknown-status",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "Exhausted"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "name": "History limits sorted by name, id words, id; numeric ids; missing keys",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "anthropic",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": {
+      "generatedAt": 1795459100000,
+      "sinceMs": 1795372700000,
+      "entries": [
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:7d:a-b-c",
+          "label": "Zeta 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.1
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:7d",
+          "label": "7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.2
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:7d:b",
+          "label": "Alpha 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.3
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:5h",
+          "label": "5 Hour limit",
+          "windowLabel": "5 Hour",
+          "usedFraction": 0.4
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:5h:b",
+          "label": "5 Hour burst",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.5
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:5h:q2",
+          "label": "5 Hour q2",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.45
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:5h:q",
+          "label": "5 Hour q",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.46
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": 42,
+          "label": "Weekly",
+          "windowLabel": "Weekly",
+          "usedFraction": 0.6
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "label": "Custom meter",
+          "usedFraction": 0.7
+        },
+        {
+          "recordedAt": 1795448300000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "usedFraction": 0.8
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "anthropic",
+          "email": "hist.user@example.com",
+          "limitId": "m:1",
+          "label": "Monthly cap",
+          "windowLabel": "Monthly",
+          "usedFraction": 1.4,
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "anthropic",
+          "accountId": "acct-demo-hist-02",
+          "limitId": "m:1",
+          "label": "Monthly cap",
+          "windowLabel": "30 days",
+          "usedFraction": -0.2,
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795451900000,
+          "provider": "anthropic",
+          "limitId": "m:1",
+          "label": "Monthly cap",
+          "windowLabel": "Month 1",
+          "usedFraction": "high",
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795455500000,
+          "provider": "anthropic",
+          "accountKey": "",
+          "limitId": "",
+          "label": "",
+          "windowLabel": "",
+          "usedFraction": 0.33
+        },
+        {
+          "recordedAt": 1795455500000,
+          "provider": "anthropic",
+          "accountKey": "",
+          "limitId": "",
+          "label": "",
+          "windowLabel": "",
+          "usedFraction": 0.66
+        },
+        {
+          "recordedAt": 1795455500000,
+          "provider": "anthropic",
+          "accountKey": "k1",
+          "limitId": "x:7d",
+          "label": "7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.25,
+          "resetsAt": 1795477100000
+        }
+      ]
+    },
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

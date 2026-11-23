@@ -1,0 +1,368 @@
+{
+  "name": "Reset phrases across minute, hour and day boundaries",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "clock",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "c:0",
+              "label": "Past hour",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795455500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:1",
+              "label": "Right now",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459100000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:2",
+              "label": "In 30 seconds",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459130000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:3",
+              "label": "In 59.999 s",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459159999
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:4",
+              "label": "In 60 seconds",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459160000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:5",
+              "label": "In 61 seconds",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459161000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:6",
+              "label": "In 119.999 s",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795459219999
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:7",
+              "label": "In 59 min",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795462640000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:8",
+              "label": "In 60 min",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795462700000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:9",
+              "label": "In 61 min",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795462760000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:10",
+              "label": "In 23h59m",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795545440000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:11",
+              "label": "In 24h",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795545500000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:12",
+              "label": "In 25h30m",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795550900000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:13",
+              "label": "In 47h59m",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795631840000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:14",
+              "label": "In 10d3h",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1796333900000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:15",
+              "label": "In 400 days",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1830019100000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "c:16",
+              "label": "In 9h5m",
+              "scope": {
+                "provider": "clock",
+                "shared": true
+              },
+              "window": {
+                "resetsAt": 1795491800000
+              },
+              "amount": {
+                "used": 50,
+                "limit": 100,
+                "remaining": 50,
+                "usedFraction": 0.5,
+                "remainingFraction": 0.5,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "clock.user@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

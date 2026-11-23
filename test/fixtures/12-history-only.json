@@ -1,0 +1,57 @@
+{
+  "name": "data nil, history present",
+  "input": {
+    "data": null,
+    "history": {
+      "generatedAt": 1795459100000,
+      "sinceMs": 1795372700000,
+      "entries": [
+        {
+          "recordedAt": 1795453700000,
+          "provider": "anthropic",
+          "accountKey": "claude-demo|org-a",
+          "email": "alex.sample@example.com",
+          "limitId": "anthropic:7d",
+          "label": "Claude 7 Day",
+          "windowLabel": "7 Day",
+          "usedFraction": 0.45,
+          "status": "ok",
+          "resetsAt": 1795631900000
+        },
+        {
+          "recordedAt": 1795279100000,
+          "provider": "openai-codex",
+          "accountKey": "codex-demo|1",
+          "limitId": "openai-codex:primary",
+          "label": "5 hours",
+          "windowLabel": "5 hours",
+          "usedFraction": 0.6,
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795027100000,
+          "provider": "openai-codex",
+          "accountKey": "codex-demo|1",
+          "limitId": "openai-codex:secondary",
+          "label": "7 days",
+          "windowLabel": "7 days",
+          "usedFraction": 0.2,
+          "status": "ok"
+        },
+        {
+          "recordedAt": 1795459080000,
+          "provider": "grok-nobody",
+          "accountKey": "x",
+          "limitId": "z",
+          "label": "Z",
+          "usedFraction": 0.2
+        }
+      ]
+    },
+    "now": 1795459100000,
+    "fetched_at": null,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

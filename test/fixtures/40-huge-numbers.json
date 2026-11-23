@@ -1,0 +1,131 @@
+{
+  "name": "Large amounts and far-away resets",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "big-wallet",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "big:a",
+              "label": "Big",
+              "scope": {
+                "provider": "big-wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 1000000000000,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "big:b",
+              "label": "Fraction",
+              "scope": {
+                "provider": "big-wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 123456.5,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "big:c",
+              "label": "Under 100",
+              "scope": {
+                "provider": "big-wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 99.995,
+                "unit": "usd"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "big:d",
+              "label": "Sub cent",
+              "scope": {
+                "provider": "big-wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0.004,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "far-away",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "far:a",
+              "label": "Far",
+              "scope": {
+                "provider": "far-away",
+                "windowId": "7d",
+                "shared": true
+              },
+              "window": {
+                "id": "7d",
+                "label": "7 days",
+                "resetsAt": 1830019100000
+              },
+              "amount": {
+                "used": 100,
+                "limit": 100,
+                "remaining": 0,
+                "usedFraction": 1,
+                "remainingFraction": 0,
+                "unit": "percent"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "far:b",
+              "label": "Farther",
+              "scope": {
+                "provider": "far-away",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 2141105900000
+              },
+              "amount": {
+                "used": 20,
+                "limit": 100,
+                "remaining": 80,
+                "usedFraction": 0.2,
+                "remainingFraction": 0.8,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

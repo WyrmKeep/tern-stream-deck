@@ -1,0 +1,49 @@
+{
+  "name": "History entries without recordedAt",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "xai-oauth",
+          "fetchedAt": 1795459070000,
+          "limits": [],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": {
+      "generatedAt": 1795459100000,
+      "sinceMs": 1795372700000,
+      "entries": [
+        {
+          "provider": "xai-oauth",
+          "accountKey": "xai-demo|1",
+          "limitId": "xai-oauth:credits:1w",
+          "label": "Weekly Credits",
+          "windowLabel": "1 week",
+          "usedFraction": 0.35,
+          "status": "ok"
+        },
+        {
+          "provider": "xai-oauth",
+          "accountKey": "xai-demo|1",
+          "limitId": "xai-oauth:month",
+          "label": "Monthly Credits",
+          "windowLabel": "Month",
+          "usedFraction": 0.1,
+          "status": "ok",
+          "recordedAt": "yesterday"
+        }
+      ]
+    },
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

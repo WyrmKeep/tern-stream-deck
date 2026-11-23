@@ -1,0 +1,51 @@
+{
+  "name": "google-antigravity with no Gemini limit and no history",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "google-antigravity",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "ag:claude",
+              "label": "Claude Sonnet 4.5",
+              "scope": {
+                "provider": "google-antigravity",
+                "windowId": "5h",
+                "shared": true
+              },
+              "window": {
+                "id": "5h",
+                "label": "5 hours",
+                "resetsAt": 1795466300000
+              },
+              "amount": {
+                "used": 99,
+                "limit": 100,
+                "remaining": 1,
+                "usedFraction": 0.99,
+                "remainingFraction": 0.01,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "gem.ag@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

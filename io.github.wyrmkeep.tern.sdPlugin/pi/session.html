@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="pi.css" />
+		<script>
+			const SLOTS = 10;
+
+			function connectElgatoStreamDeckSocket(port, uuid, registerEvent, info, actionInfo) {
+				const action = JSON.parse(actionInfo);
+				const select = document.getElementById("session");
+				const settings = action.payload.settings ?? {};
+				let chosen = typeof settings.name === "string" && settings.name !== "" ? "name:" + settings.name : "slot:" + (Number(settings.slot) || 1);
+
+				const offer = (names) => {
+					const bySlot = document.createElement("optgroup");
+					bySlot.label = "By place in Tern's list";
+					for (let slot = 1; slot <= SLOTS; slot++) bySlot.append(new Option("Session " + slot + (names[slot - 1] ? " (now " + names[slot - 1] + ")" : ""), "slot:" + slot));
+					const byName = document.createElement("optgroup");
+					byName.label = "Always this session";
+					const listed = chosen.startsWith("name:") && !names.includes(chosen.slice(5)) ? [...names, chosen.slice(5)] : names;
+					for (const name of listed) byName.append(new Option(name, "name:" + name));
+					select.replaceChildren(bySlot, byName);
+					select.value = chosen;
+				};
+				offer([]);
+
+				const socket = new WebSocket("ws://127.0.0.1:" + port);
+				socket.onopen = () => socket.send(JSON.stringify({ event: registerEvent, uuid }));
+				socket.onmessage = (event) => {
+					const message = JSON.parse(event.data);
+					if (message.event === "sendToPropertyInspector" && Array.isArray(message.payload?.sessions)) offer(message.payload.sessions);
+				};
+				select.onchange = () => {
+					chosen = select.value;
+					const payload = chosen.startsWith("name:") ? { name: chosen.slice(5) } : { slot: Number(chosen.slice(5)) };
+					socket.send(JSON.stringify({ event: "setSettings", context: action.context, payload }));
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<div class="row">
+			<label for="session">Session</label>
+			<select id="session"></select>
+		</div>
+		<p class="hint">A place follows Tern's list as sessions come and go; a name stays with one session.</p>
+	</body>
+</html>

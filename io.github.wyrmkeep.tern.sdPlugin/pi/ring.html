@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="pi.css" />
+		<script>
+			const BUILT_IN = [
+				{ id: "claude", name: "Claude" },
+				{ id: "codex", name: "Codex" },
+				{ id: "gemini", name: "Gemini" },
+				{ id: "opencode", name: "OpenCode" },
+				{ id: "grok", name: "Grok" },
+			];
+
+			function connectElgatoStreamDeckSocket(port, uuid, registerEvent, info, actionInfo) {
+				const action = JSON.parse(actionInfo);
+				const select = document.getElementById("provider");
+				let chosen = action.payload.settings?.provider ?? "claude";
+
+				const offer = (providers) => {
+					const list = providers.some((provider) => provider.id === chosen) ? providers : [...providers, { id: chosen, name: chosen }];
+					select.replaceChildren(...list.map((provider) => new Option(provider.name, provider.id)));
+					select.value = chosen;
+				};
+				offer(BUILT_IN);
+
+				const socket = new WebSocket("ws://127.0.0.1:" + port);
+				socket.onopen = () => socket.send(JSON.stringify({ event: registerEvent, uuid }));
+				socket.onmessage = (event) => {
+					const message = JSON.parse(event.data);
+					if (message.event === "sendToPropertyInspector" && Array.isArray(message.payload?.providers)) offer(message.payload.providers);
+				};
+				select.onchange = () => {
+					chosen = select.value;
+					socket.send(JSON.stringify({ event: "setSettings", context: action.context, payload: { provider: chosen } }));
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<div class="row">
+			<label for="provider">Provider</label>
+			<select id="provider"></select>
+		</div>
+		<p class="hint">The figures are omp's, the same reading Tern's Usage Rings show.</p>
+	</body>
+</html>

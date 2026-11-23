@@ -1,0 +1,98 @@
+{
+  "name": "google-gemini-cli alone: capacity counts",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "google-gemini-cli",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "gcli:daily",
+              "label": "Daily requests",
+              "scope": {
+                "provider": "google-gemini-cli",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795491500000
+              },
+              "amount": {
+                "used": 45,
+                "limit": 100,
+                "remaining": 55,
+                "usedFraction": 0.45,
+                "remainingFraction": 0.55,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "gem.cli@example.com"
+          }
+        },
+        {
+          "provider": "google-gemini-cli",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "gcli:daily",
+              "label": "Daily requests",
+              "scope": {
+                "provider": "google-gemini-cli",
+                "windowId": "1d",
+                "shared": true
+              },
+              "window": {
+                "id": "1d",
+                "label": "Daily",
+                "resetsAt": 1795477100000
+              },
+              "amount": {
+                "used": 15,
+                "limit": 100,
+                "remaining": 85,
+                "usedFraction": 0.15,
+                "remainingFraction": 0.85,
+                "unit": "percent"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "gem.two@example.com"
+          }
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {
+        "google-gemini-cli": [
+          {
+            "window": "1d",
+            "accounts": 2,
+            "usedAccounts": 0.6,
+            "remainingAccounts": 1.4
+          },
+          {
+            "window": "7d",
+            "accounts": 2,
+            "usedAccounts": 0.2,
+            "remainingAccounts": 1.8
+          }
+        ]
+      }
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "data nil, history nil: nothing read yet",
+  "input": {
+    "data": null,
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": null,
+    "loading": null,
+    "error": null,
+    "placed": [
+      "ghost-provider",
+      "claude",
+      "ghost-provider"
+    ]
+  }
+}

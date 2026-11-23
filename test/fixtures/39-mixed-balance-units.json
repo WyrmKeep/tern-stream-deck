@@ -1,0 +1,148 @@
+{
+  "name": "Balances whose units differ are not summed",
+  "input": {
+    "data": {
+      "generatedAt": 1795459010000,
+      "reports": [
+        {
+          "provider": "wallet",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:a",
+              "label": "Wallet A",
+              "scope": {
+                "provider": "wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 5,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "wallet.a@example.com"
+          }
+        },
+        {
+          "provider": "wallet",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:b",
+              "label": "Wallet B",
+              "scope": {
+                "provider": "wallet",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 9,
+                "unit": "tokens"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {
+            "email": "wallet.b@example.com"
+          }
+        },
+        {
+          "provider": "wallet-b",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:a",
+              "label": "Wallet A",
+              "scope": {
+                "provider": "wallet-b",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 4
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "wallet-b",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:b",
+              "label": "Wallet B",
+              "scope": {
+                "provider": "wallet-b",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 6,
+                "unit": "usd"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "provider": "wallet-c",
+          "fetchedAt": 1795459070000,
+          "limits": [
+            {
+              "id": "w:a",
+              "label": "Wallet A",
+              "scope": {
+                "provider": "wallet-c",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 2.5,
+                "unit": "credits"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "w:b",
+              "label": "Wallet B",
+              "scope": {
+                "provider": "wallet-c",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0.1,
+                "unit": "credits"
+              },
+              "status": "ok"
+            },
+            {
+              "id": "w:c",
+              "label": "Wallet C",
+              "scope": {
+                "provider": "wallet-c",
+                "shared": true
+              },
+              "amount": {
+                "remaining": 0.2,
+                "unit": "credits"
+              },
+              "status": "ok"
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "accountsWithoutUsage": [],
+      "disabledCredentials": [],
+      "capacity": {}
+    },
+    "history": null,
+    "now": 1795459100000,
+    "fetched_at": 1795459010000,
+    "loading": null,
+    "error": null,
+    "placed": []
+  }
+}
